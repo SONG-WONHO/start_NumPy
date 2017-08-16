@@ -24,7 +24,7 @@ print(a_array[[0,1],[0]])
     [0 6]
 '''
 
-#rows: 0,1  col: 0
+#rows: 0,3  col: 0
 #boradcasting
 print(a_array[[0,3],[0]])
 '''
@@ -62,8 +62,11 @@ a_array = np.array([1,2,3,4+3j,5+6j,np.nan,6,7,np.nan])
 
 print(a_array[np.iscomplex(a_array)])
 '''
-[ 4.+3.j  5.+6.j]
+    [ 4.+3.j  5.+6.j]
 '''
 
 #~ means not
 print(a_array[~np.isnan(a_array)])
+'''
+    [ 1.+0.j  2.+0.j  3.+0.j  4.+3.j  5.+6.j  6.+0.j  7.+0.j]
+'''
