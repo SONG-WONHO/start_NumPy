@@ -14,32 +14,69 @@ object.shape
 
 #show shape
 a_array = np.array([1,2,3])
+'''
+    [1 2 3]
+'''
+
 print(a_array.shape)
 ##(3,)
 
 a_array = np.array([[1,2,3],[1,2,3]])
+'''
+    [[1 2 3]
+     [1 2 3]]
+'''
+
 print(a_array.shape)
 ##(2,3)
 
 a_array = np.array([[[1,2,3,4],[1,2,3,4]],[[1,2,3,4],[1,2,3,4]]])
+'''
+    [[[1 2 3 4]
+      [1 2 3 4]]
+
+     [[1 2 3 4]
+      [1 2 3 4]]]
+'''
+
 print(a_array.shape)
 ##(2,2,4)
 
 #reshape - method1
 #(2,3) => (3,2)
 a_array = np.array([[1,2,3],[4,5,6]])
+'''
+    [[1 2 3]
+     [4 5 6]]
+'''
+
 a_array.shape = (3,2)
 print(a_array)
+'''
+    [[1 2]
+     [3 4]
+     [5 6]]
+'''
 
 '''
 np.reshape(object, newshape, order)
 '''
 
-#reshap - method2
+#reshape - method2
 #(2,3) => (3,2)
 a_array = np.array([[1,2,3],[4,5,6]])
+'''
+    [[1 2 3]
+     [4 5 6]]
+'''
+
 b_array = np.reshape(a_array, (3,2))
 print(b_array)
+'''
+    [[1 2]
+     [3 4]
+     [5 6]]
+'''
 
 #ndim
 '''
