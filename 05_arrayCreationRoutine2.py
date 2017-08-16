@@ -17,7 +17,7 @@ print(type(a_array)) ##<class 'numpy.ndarray'>
 a_array = np.asarray(a_tuple)
 print(type(a_array)) ##<class 'numpy.ndarray'>
 
-#butter => ndarray
+#buffer => ndarray
 #Not used often
 string = b'hello, numpy!'
 a_array = np.frombuffer(string, dtype = 'S1')
